@@ -1,0 +1,831 @@
+@prefix : <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix FlightsSurvey: <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#> .
+@base <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey/> .
+
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft
+FlightsSurvey:hasAircraft rdf:type owl:ObjectProperty ;
+                          rdfs:domain FlightsSurvey:Survey ;
+                          rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> ;
+                          rdfs:comment "has Aircraft" ;
+                          rdfs:label "hasAircraft" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline
+FlightsSurvey:hasAirline rdf:type owl:ObjectProperty ;
+                         rdfs:domain FlightsSurvey:Survey ;
+                         rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> ;
+                         rdfs:comment "has Airline" ;
+                         rdfs:label "hasAirline" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry
+FlightsSurvey:hasCountry rdf:type owl:ObjectProperty ;
+                         rdfs:domain <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                         rdfs:range FlightsSurvey:Country ;
+                         rdfs:comment "has Country" ;
+                         rdfs:label "hasCountry" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate
+FlightsSurvey:hasDate rdf:type owl:ObjectProperty ;
+                      rdfs:domain FlightsSurvey:Survey ;
+                      rdfs:range FlightsSurvey:Date ;
+                      rdfs:comment "has Date" ;
+                      rdfs:label "hasDate" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown
+FlightsSurvey:hasDateFlown rdf:type owl:ObjectProperty ;
+                           rdfs:domain FlightsSurvey:Survey ;
+                           rdfs:range FlightsSurvey:Date ;
+                           rdfs:comment "has Date Flown" ;
+                           rdfs:label "hasDateFlown" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination
+FlightsSurvey:hasDestination rdf:type owl:ObjectProperty ;
+                             rdfs:domain FlightsSurvey:Survey ;
+                             rdfs:range FlightsSurvey:City ;
+                             rdfs:comment "has Destination" ;
+                             rdfs:label "hasDestination" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin
+FlightsSurvey:hasOrigin rdf:type owl:ObjectProperty ;
+                        rdfs:domain FlightsSurvey:Survey ;
+                        rdfs:range FlightsSurvey:City ;
+                        rdfs:comment "has Origin" ;
+                        rdfs:label "hasOrigin" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger
+FlightsSurvey:hasPassenger rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           rdfs:domain FlightsSurvey:Survey ;
+                           rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                           rdfs:comment "has Passenger" ;
+                           rdfs:label "hasPassenger" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished
+FlightsSurvey:hasPublished rdf:type owl:ObjectProperty ;
+                           rdfs:domain FlightsSurvey:Survey ;
+                           rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                           rdfs:comment "has Published" ;
+                           rdfs:label "hasPublished" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType
+FlightsSurvey:hasSeatType rdf:type owl:ObjectProperty ;
+                          rdfs:domain FlightsSurvey:Survey ;
+                          rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> ;
+                          rdfs:comment "has Seat Type" ;
+                          rdfs:label "hasSeatType" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel
+FlightsSurvey:hasTypeOfTravel rdf:type owl:ObjectProperty ;
+                              rdfs:domain FlightsSurvey:Survey ;
+                              rdfs:range <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> ;
+                              rdfs:comment "has Type of Travel" ;
+                              rdfs:label "hasTypeOfTraveller" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating
+FlightsSurvey:hasOverallRating rdf:type owl:DatatypeProperty ;
+                               rdfs:domain FlightsSurvey:Survey ;
+                               rdfs:range [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:integer ;
+                                            owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                   ]
+                                                                   [ xsd:maxInclusive 10
+                                                                   ]
+                                                                 )
+                                          ] ;
+                               rdfs:comment "has Overall Rating" ;
+                               rdfs:label "hasOverallRating" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified
+FlightsSurvey:isVerified rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain FlightsSurvey:Survey ;
+                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                      owl:onDatatype xsd:integer ;
+                                      owl:withRestrictions ( [ xsd:minInclusive 0
+                                                             ]
+                                                             [ xsd:maxInclusive 1
+                                                             ]
+                                                           )
+                                    ] ;
+                         rdfs:comment "[0-> Not verified ; 1->Verified]" ;
+                         rdfs:label "isVerified" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City
+FlightsSurvey:City rdf:type owl:Class ;
+                   rdfs:comment "Cities with airports" ;
+                   rdfs:label "City" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country
+FlightsSurvey:Country rdf:type owl:Class ;
+                      rdfs:comment "The country of the passenger" ;
+                      rdfs:label "Country" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date
+FlightsSurvey:Date rdf:type owl:Class ;
+                   rdfs:comment "The date of the survey" ;
+                   rdfs:label "Date" ;
+                   rdfs:sameAs "http://dbpedia.org/page/Date" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor
+FlightsSurvey:Detractor rdf:type owl:Class ;
+                        rdfs:subClassOf FlightsSurvey:NPS ;
+                        rdfs:comment "Overall rating less than 7" ;
+                        rdfs:label "Detractor" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS
+FlightsSurvey:NPS rdf:type owl:Class ;
+                  rdfs:comment "NPS extracted from  survey's Overall Rating." ;
+                  rdfs:label "NPS" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral
+FlightsSurvey:Neutral rdf:type owl:Class ;
+                      rdfs:subClassOf FlightsSurvey:NPS ;
+                      rdfs:comment "Overall rating between 7 and 9" ;
+                      rdfs:label "Neutral" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter
+FlightsSurvey:Promoter rdf:type owl:Class ;
+                       rdfs:subClassOf FlightsSurvey:NPS ;
+                       rdfs:comment "Overall rating greater or equal  than 7" ;
+                       rdfs:label "Promoter" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey
+FlightsSurvey:Survey rdf:type owl:Class ;
+                     rdfs:comment "Survey data" ;
+                     rdfs:label "Survey" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> rdf:type owl:Class ;
+                                                                                    rdfs:comment "The aircraft/s used in the trip" ;
+                                                                                    rdfs:label "Aircraft" ;
+                                                                                    rdfs:sameAs "https://dbpedia.org/page/Aircraft" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                         rdfs:comment "The title of the comment" ;
+                                                                                         rdfs:label "Comment Title" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                        rdfs:comment "The full comment" ;
+                                                                                        rdfs:label "Comment desc" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> rdf:type owl:Class ;
+                                                                                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty FlightsSurvey:hasDestination ;
+                                                                                                             owl:allValuesFrom FlightsSurvey:City
+                                                                                                           ] ;
+                                                                                       rdfs:subClassOf FlightsSurvey:City ;
+                                                                                       rdfs:comment "The destination city of the trip" ;
+                                                                                       rdfs:label "Destination" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                                          rdfs:comment "Cabin Staff Service value" ;
+                                                                                                          rdfs:label "Cabin Staff Service" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                                     rdfs:comment "'Food and Beverages' value" ;
+                                                                                                     rdfs:label "Food and Beverages" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                                     rdfs:comment "'Ground Service' value" ;
+                                                                                                     rdfs:label "Ground Service" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> rdf:type owl:Class ;
+                                                                                                             rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                                             rdfs:comment "'Inflight Entertainment' value" ;
+                                                                                                             rdfs:label "Inflight Entertainment" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                                   rdfs:comment "'Seat Comfort' value" ;
+                                                                                                   rdfs:label "Seat Comfort" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                                      rdfs:comment "'Value for Money' value" ;
+                                                                                                      rdfs:label "Value for Money" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf FlightsSurvey:Survey ;
+                                                                                                        rdfs:comment "'Wifi Connectivity' value" ;
+                                                                                                        rdfs:label "Wifi Connectivity" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> rdf:type owl:Class ;
+                                                                                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty FlightsSurvey:hasOrigin ;
+                                                                                                        owl:allValuesFrom FlightsSurvey:City
+                                                                                                      ] ;
+                                                                                  rdfs:subClassOf FlightsSurvey:City ;
+                                                                                  rdfs:comment "The origin city of the trip" ;
+                                                                                  rdfs:label "Origin" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> rdf:type owl:Class ;
+                                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty FlightsSurvey:hasCountry ;
+                                                                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                           owl:onClass FlightsSurvey:Country
+                                                                                                         ] ;
+                                                                                     rdfs:comment "The passenger's name" ;
+                                                                                     rdfs:label "Passenger" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> rdf:type owl:Class ;
+                                                                                     rdfs:comment "The seat type used in the trip" ;
+                                                                                     rdfs:label "Seat Type" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> rdf:type owl:Class ;
+                                                                                             rdfs:comment "Passenger's type of travel" ;
+                                                                                             rdfs:label "Type Of Traveller" .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> rdf:type owl:Class ;
+                                                                                       rdfs:comment "The airline in the trip" ;
+                                                                                       rdfs:label "Airline" ;
+                                                                                       rdfs:sameAs "https://dbpedia.org/page/Airline" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350
+FlightsSurvey:A350 rdf:type owl:NamedIndividual ,
+                            <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350-1000
+FlightsSurvey:A350-1000 rdf:type owl:NamedIndividual ,
+                                 <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380
+FlightsSurvey:A380 rdf:type owl:NamedIndividual ,
+                            <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380-800
+FlightsSurvey:A380-800 rdf:type owl:NamedIndividual ,
+                                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#AlwaleedAlthani
+FlightsSurvey:AlwaleedAlthani rdf:type owl:NamedIndividual ,
+                                       <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                              FlightsSurvey:hasCountry FlightsSurvey:Qatar .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Auckland
+FlightsSurvey:Auckland rdf:type owl:NamedIndividual ,
+                                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Australia
+FlightsSurvey:Australia rdf:type owl:NamedIndividual ,
+                                 FlightsSurvey:Country .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BDarnel
+FlightsSurvey:BDarnel rdf:type owl:NamedIndividual ,
+                               <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                      FlightsSurvey:hasCountry FlightsSurvey:Germany .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BrianEnglish
+FlightsSurvey:BrianEnglish rdf:type owl:NamedIndividual ,
+                                    <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                           FlightsSurvey:hasCountry FlightsSurvey:Canada ;
+                           FlightsSurvey:hasPublished <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business
+FlightsSurvey:Business rdf:type owl:NamedIndividual ,
+                                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClass
+FlightsSurvey:BusinessClass rdf:type owl:NamedIndividual ,
+                                     <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CBarker
+FlightsSurvey:CBarker rdf:type owl:NamedIndividual ,
+                               <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                      FlightsSurvey:hasCountry FlightsSurvey:Germany .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Canada
+FlightsSurvey:Canada rdf:type owl:NamedIndividual ,
+                              FlightsSurvey:Country .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CoupleLeisure
+FlightsSurvey:CoupleLeisure rdf:type owl:NamedIndividual ,
+                                     <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha
+FlightsSurvey:Doha rdf:type owl:NamedIndividual ,
+                            <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> ,
+                            <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Dusseldorf
+FlightsSurvey:Dusseldorf rdf:type owl:NamedIndividual ,
+                                  <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#EconomyClass
+FlightsSurvey:EconomyClass rdf:type owl:NamedIndividual ,
+                                    <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FamilyLeisure
+FlightsSurvey:FamilyLeisure rdf:type owl:NamedIndividual ,
+                                     <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FirstClass
+FlightsSurvey:FirstClass rdf:type owl:NamedIndividual ,
+                                  <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Frankfurt
+FlightsSurvey:Frankfurt rdf:type owl:NamedIndividual ,
+                                 <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Germany
+FlightsSurvey:Germany rdf:type owl:NamedIndividual ,
+                               FlightsSurvey:Country .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#KilimanjaroViaDoha
+FlightsSurvey:KilimanjaroViaDoha rdf:type owl:NamedIndividual ,
+                                          <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#London
+FlightsSurvey:London rdf:type owl:NamedIndividual ,
+                              <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrow
+FlightsSurvey:LondonHeathrow rdf:type owl:NamedIndividual ,
+                                      <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrowViaDoha
+FlightsSurvey:LondonHeathrowViaDoha rdf:type owl:NamedIndividual ,
+                                             <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MaryLe
+FlightsSurvey:MaryLe rdf:type owl:NamedIndividual ,
+                              <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                     FlightsSurvey:hasCountry FlightsSurvey:UnitedKingdom .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MelbourneViaDoha
+FlightsSurvey:MelbourneViaDoha rdf:type owl:NamedIndividual ,
+                                        <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Montreal
+FlightsSurvey:Montreal rdf:type owl:NamedIndividual ,
+                                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NFoster
+FlightsSurvey:NFoster rdf:type owl:NamedIndividual ,
+                               <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                      FlightsSurvey:hasCountry FlightsSurvey:UnitedStates .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NewDelhi
+FlightsSurvey:NewDelhi rdf:type owl:NamedIndividual ,
+                                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Perth
+FlightsSurvey:Perth rdf:type owl:NamedIndividual ,
+                             <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#QandeelAhtasham
+FlightsSurvey:QandeelAhtasham rdf:type owl:NamedIndividual ,
+                                       <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                              FlightsSurvey:hasCountry FlightsSurvey:UnitedKingdom .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Qatar
+FlightsSurvey:Qatar rdf:type owl:NamedIndividual ,
+                             FlightsSurvey:Country .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SanFrancisco
+FlightsSurvey:SanFrancisco rdf:type owl:NamedIndividual ,
+                                    <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SoloLeisure
+FlightsSurvey:SoloLeisure rdf:type owl:NamedIndividual ,
+                                   <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Tokyo
+FlightsSurvey:Tokyo rdf:type owl:NamedIndividual ,
+                             <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom
+FlightsSurvey:UnitedKingdom rdf:type owl:NamedIndividual ,
+                                     FlightsSurvey:Country .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedStates
+FlightsSurvey:UnitedStates rdf:type owl:NamedIndividual ,
+                                    FlightsSurvey:Country .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WWarnock
+FlightsSurvey:WWarnock rdf:type owl:NamedIndividual ,
+                                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                       FlightsSurvey:hasCountry FlightsSurvey:UnitedKingdom .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WayneBurgess
+FlightsSurvey:WayneBurgess rdf:type owl:NamedIndividual ,
+                                    <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> ;
+                           FlightsSurvey:hasCountry FlightsSurvey:Australia .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways
+FlightsSurvey:qatar_airways rdf:type owl:NamedIndividual ,
+                                     <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#ryanAir
+FlightsSurvey:ryanAir rdf:type owl:NamedIndividual ,
+                               <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> rdf:type owl:NamedIndividual ,
+                                                                                    FlightsSurvey:Survey ;
+                                                                           FlightsSurvey:hasAircraft FlightsSurvey:A350 ;
+                                                                           FlightsSurvey:hasAirline FlightsSurvey:qatar_airways ;
+                                                                           FlightsSurvey:hasCountry FlightsSurvey:UnitedKingdom ;
+                                                                           FlightsSurvey:hasDateFlown <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> ;
+                                                                           FlightsSurvey:hasDestination FlightsSurvey:Doha ;
+                                                                           FlightsSurvey:hasOrigin FlightsSurvey:Auckland ;
+                                                                           FlightsSurvey:hasPassenger FlightsSurvey:WWarnock ;
+                                                                           FlightsSurvey:hasOverallRating 8 ;
+                                                                           FlightsSurvey:isVerified 1 .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> rdf:type owl:NamedIndividual ,
+                                                                                            FlightsSurvey:Date .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> rdf:type owl:NamedIndividual ,
+                                                                                    FlightsSurvey:Survey ;
+                                                                           FlightsSurvey:hasAircraft FlightsSurvey:A380 ;
+                                                                           FlightsSurvey:hasAirline FlightsSurvey:qatar_airways ;
+                                                                           FlightsSurvey:hasCountry FlightsSurvey:Australia ;
+                                                                           FlightsSurvey:hasDateFlown <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> ;
+                                                                           FlightsSurvey:hasDestination FlightsSurvey:Perth ;
+                                                                           FlightsSurvey:hasOrigin FlightsSurvey:Doha ;
+                                                                           FlightsSurvey:hasPassenger FlightsSurvey:WayneBurgess ;
+                                                                           FlightsSurvey:hasOverallRating 1 ;
+                                                                           FlightsSurvey:isVerified 1 .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> rdf:type owl:NamedIndividual ,
+                                                                                    FlightsSurvey:Survey ;
+                                                                           FlightsSurvey:hasAircraft FlightsSurvey:A380-800 ;
+                                                                           FlightsSurvey:hasAirline FlightsSurvey:qatar_airways ;
+                                                                           FlightsSurvey:hasCountry FlightsSurvey:Qatar ;
+                                                                           FlightsSurvey:hasDate <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> ;
+                                                                           FlightsSurvey:hasPassenger FlightsSurvey:AlwaleedAlthani ;
+                                                                           FlightsSurvey:hasOverallRating 10 ;
+                                                                           FlightsSurvey:isVerified 1 .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300> rdf:type owl:NamedIndividual ,
+                                                                                                       <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+
+
+###  http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( FlightsSurvey:Detractor
+                FlightsSurvey:Neutral
+                FlightsSurvey:Promoter
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service>
+                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages>
+                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service>
+                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment>
+                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort>
+                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money>
+                <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity>
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#X> rdf:type swrl:Variable .
+
+<urn:swrl:var#over> rdf:type swrl:Variable .
+
+<urn:swrl:var#Y> rdf:type swrl:Variable .
+
+[ rdfs:comment "Detractor" ;
+   rdfs:label "Detractor" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate FlightsSurvey:hasOverallRating ;
+                           swrl:argument1 <urn:swrl:var#X> ;
+                           swrl:argument2 <urn:swrl:var#over>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate FlightsSurvey:Survey ;
+                                      swrl:argument1 <urn:swrl:var#X>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                 swrl:builtin swrlb:greaterThanOrEqual ;
+                                                 swrl:arguments [ rdf:type rdf:List ;
+                                                                  rdf:first <urn:swrl:var#over> ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first 0 ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                            swrl:builtin swrlb:lessThan ;
+                                                            swrl:arguments [ rdf:type rdf:List ;
+                                                                             rdf:first <urn:swrl:var#over> ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first 7 ;
+                                                                                        rdf:rest rdf:nil
+                                                                                      ]
+                                                                           ]
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate FlightsSurvey:hasPassenger ;
+                                                                       swrl:argument1 <urn:swrl:var#X> ;
+                                                                       swrl:argument2 <urn:swrl:var#Y>
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate FlightsSurvey:Detractor ;
+                           swrl:argument1 <urn:swrl:var#X>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate FlightsSurvey:Detractor ;
+                                      swrl:argument1 <urn:swrl:var#Y>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ]
+ ] .
+
+[ rdfs:comment "Neutral" ;
+   rdfs:label "Neutral" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate FlightsSurvey:hasOverallRating ;
+                           swrl:argument1 <urn:swrl:var#X> ;
+                           swrl:argument2 <urn:swrl:var#over>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate FlightsSurvey:Survey ;
+                                      swrl:argument1 <urn:swrl:var#X>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                 swrl:builtin swrlb:lessThan ;
+                                                 swrl:arguments [ rdf:type rdf:List ;
+                                                                  rdf:first <urn:swrl:var#over> ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first 9 ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate FlightsSurvey:hasPassenger ;
+                                                            swrl:argument1 <urn:swrl:var#X> ;
+                                                            swrl:argument2 <urn:swrl:var#Y>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                       swrl:builtin swrlb:greaterThanOrEqual ;
+                                                                       swrl:arguments [ rdf:type rdf:List ;
+                                                                                        rdf:first <urn:swrl:var#over> ;
+                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                   rdf:first 7 ;
+                                                                                                   rdf:rest rdf:nil
+                                                                                                 ]
+                                                                                      ]
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate FlightsSurvey:Neutral ;
+                           swrl:argument1 <urn:swrl:var#X>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate FlightsSurvey:Neutral ;
+                                      swrl:argument1 <urn:swrl:var#Y>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ]
+ ] .
+
+[ rdfs:comment "Promoter" ;
+   rdfs:label "Promoter" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate FlightsSurvey:hasOverallRating ;
+                           swrl:argument1 <urn:swrl:var#X> ;
+                           swrl:argument2 <urn:swrl:var#over>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                      swrl:builtin swrlb:lessThanOrEqual ;
+                                      swrl:arguments [ rdf:type rdf:List ;
+                                                       rdf:first <urn:swrl:var#over> ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first 10 ;
+                                                                  rdf:rest rdf:nil
+                                                                ]
+                                                     ]
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate FlightsSurvey:Survey ;
+                                                 swrl:argument1 <urn:swrl:var#X>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate FlightsSurvey:hasPassenger ;
+                                                            swrl:argument1 <urn:swrl:var#X> ;
+                                                            swrl:argument2 <urn:swrl:var#Y>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                       swrl:builtin swrlb:greaterThanOrEqual ;
+                                                                       swrl:arguments [ rdf:type rdf:List ;
+                                                                                        rdf:first <urn:swrl:var#over> ;
+                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                   rdf:first 9 ;
+                                                                                                   rdf:rest rdf:nil
+                                                                                                 ]
+                                                                                      ]
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate FlightsSurvey:Promoter ;
+                           swrl:argument1 <urn:swrl:var#Y>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate FlightsSurvey:Promoter ;
+                                      swrl:argument1 <urn:swrl:var#X>
+                                    ] ;
+                          rdf:rest rdf:nil
+                        ]
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
