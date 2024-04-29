@@ -1,0 +1,20 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; ":Evaluation_Inflight_Entertainment" ":Evaluation_Ground_Service" ":Destination" "base:Neutral" "base:Detractor" ":Evaluation_Food_Beverages" "base:NPS" ":Evaluation_Cabin_Staff_Service" ":Evaluation_Seat_Comfort" "base:Promoter" ":Origin" ":Evaluation_Value_For_Money" ":Comment_Title" ":Evaluation_Wifi_Connectivity" "base:City" ":Comment_desc" "base:Survey" ; /*classes style*/
+	"base:Promoter" -> "base:NPS" [ label = "rdfs:subClassOf" ];
+	":Evaluation_Ground_Service" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	":Comment_desc" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	":Evaluation_Value_For_Money" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	":Evaluation_Wifi_Connectivity" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	":Evaluation_Seat_Comfort" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	":Origin" -> "base:City" [ label = "rdfs:subClassOf" ];
+	":Evaluation_Inflight_Entertainment" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	":Evaluation_Food_Beverages" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	":Comment_Title" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	"base:Detractor" -> "base:NPS" [ label = "rdfs:subClassOf" ];
+	"base:Neutral" -> "base:NPS" [ label = "rdfs:subClassOf" ];
+	":Evaluation_Cabin_Staff_Service" -> "base:Survey" [ label = "rdfs:subClassOf" ];
+	":Destination" -> "base:City" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,786 @@
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "has Aircraft" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "hasAircraft" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "has Airline" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline> <http://www.w3.org/2000/01/rdf-schema#label> "hasAirline" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "has Country" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "has Date" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasDate" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown> <http://www.w3.org/2000/01/rdf-schema#comment> "has Date Flown" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown> <http://www.w3.org/2000/01/rdf-schema#label> "hasDateFlown" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "has Destination" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination> <http://www.w3.org/2000/01/rdf-schema#label> "hasDestination" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "has Origin" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "hasOrigin" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "has Passenger" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "hasPassenger" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished> <http://www.w3.org/2000/01/rdf-schema#comment> "has Published" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished> <http://www.w3.org/2000/01/rdf-schema#label> "hasPublished" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "has Seat Type" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasSeatType> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeatType" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#comment> "has Type of Travel" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasTypeOfTravel> <http://www.w3.org/2000/01/rdf-schema#label> "hasTypeOfTraveller" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> <http://www.w3.org/2000/01/rdf-schema#comment> "has Overall Rating" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> <http://www.w3.org/2000/01/rdf-schema#label> "hasOverallRating" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2001/XMLSchema#maxInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified> <http://www.w3.org/2000/01/rdf-schema#comment> "[0-> Not verified ; 1->Verified]" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified> <http://www.w3.org/2000/01/rdf-schema#label> "isVerified" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City> <http://www.w3.org/2000/01/rdf-schema#comment> "Cities with airports" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "The country of the passenger" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date of the survey" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date> <http://www.w3.org/2000/01/rdf-schema#label> "Date" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/page/Date" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor> <http://www.w3.org/2000/01/rdf-schema#comment> "Overall rating less than 7" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor> <http://www.w3.org/2000/01/rdf-schema#label> "Detractor" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS> <http://www.w3.org/2000/01/rdf-schema#comment> "NPS extracted from  survey's Overall Rating." .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS> <http://www.w3.org/2000/01/rdf-schema#label> "NPS" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral> <http://www.w3.org/2000/01/rdf-schema#comment> "Overall rating between 7 and 9" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral> <http://www.w3.org/2000/01/rdf-schema#label> "Neutral" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NPS> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter> <http://www.w3.org/2000/01/rdf-schema#comment> "Overall rating greater or equal  than 7" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter> <http://www.w3.org/2000/01/rdf-schema#label> "Promoter" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> <http://www.w3.org/2000/01/rdf-schema#comment> "Survey data" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> <http://www.w3.org/2000/01/rdf-schema#label> "Survey" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "The aircraft/s used in the trip" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Aircraft" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of the comment" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_Title> <http://www.w3.org/2000/01/rdf-schema#label> "Comment Title" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> <http://www.w3.org/2000/01/rdf-schema#comment> "The full comment" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Comment_desc> <http://www.w3.org/2000/01/rdf-schema#label> "Comment desc" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "The destination city of the trip" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Cabin Staff Service value" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> <http://www.w3.org/2000/01/rdf-schema#label> "Cabin Staff Service" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> <http://www.w3.org/2000/01/rdf-schema#comment> "'Food and Beverages' value" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> <http://www.w3.org/2000/01/rdf-schema#label> "Food and Beverages" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "'Ground Service' value" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> <http://www.w3.org/2000/01/rdf-schema#label> "Ground Service" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "'Inflight Entertainment' value" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> <http://www.w3.org/2000/01/rdf-schema#label> "Inflight Entertainment" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> <http://www.w3.org/2000/01/rdf-schema#comment> "'Seat Comfort' value" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Comfort" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> <http://www.w3.org/2000/01/rdf-schema#comment> "'Value for Money' value" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> <http://www.w3.org/2000/01/rdf-schema#label> "Value for Money" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "'Wifi Connectivity' value" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> <http://www.w3.org/2000/01/rdf-schema#label> "Wifi Connectivity" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#City> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "The origin city of the trip" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "The passenger's name" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> <http://www.w3.org/2000/01/rdf-schema#comment> "The seat type used in the trip" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Type" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> <http://www.w3.org/2000/01/rdf-schema#comment> "Passenger's type of travel" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> <http://www.w3.org/2000/01/rdf-schema#label> "Type Of Traveller" .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "The airline in the trip" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline" .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Airline" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350-1000
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350-1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350-1000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380-800
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#AlwaleedAlthani
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#AlwaleedAlthani> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#AlwaleedAlthani> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#AlwaleedAlthani> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Qatar> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Auckland
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Auckland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Auckland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Australia
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Australia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Australia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BDarnel
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BDarnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BDarnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BDarnel> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Germany> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BrianEnglish
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BrianEnglish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BrianEnglish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BrianEnglish> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Canada> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BrianEnglish> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPublished> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClass
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#BusinessClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CBarker
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CBarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CBarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CBarker> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Germany> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Canada
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Canada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CoupleLeisure
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CoupleLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#CoupleLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Dusseldorf
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Dusseldorf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Dusseldorf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#EconomyClass
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FamilyLeisure
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FamilyLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FamilyLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FirstClass
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Seat_Type> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Frankfurt
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Frankfurt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Frankfurt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Germany
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#KilimanjaroViaDoha
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#KilimanjaroViaDoha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#KilimanjaroViaDoha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#London
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrow
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrowViaDoha
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrowViaDoha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#LondonHeathrowViaDoha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MaryLe
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MaryLe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MaryLe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MaryLe> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MelbourneViaDoha
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MelbourneViaDoha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#MelbourneViaDoha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Montreal
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Montreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Montreal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NFoster
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NFoster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NFoster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NFoster> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedStates> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NewDelhi
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NewDelhi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#NewDelhi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Perth
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Perth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Perth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#QandeelAhtasham
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#QandeelAhtasham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#QandeelAhtasham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#QandeelAhtasham> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Qatar
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Qatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SanFrancisco
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SanFrancisco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SanFrancisco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Destination> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SoloLeisure
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SoloLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#SoloLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Type_Of_Traveller> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Tokyo
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Tokyo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Tokyo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Origin> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedStates
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedStates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedStates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Country> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WWarnock
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WWarnock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WWarnock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WWarnock> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WayneBurgess
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WayneBurgess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WayneBurgess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Passenger> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WayneBurgess> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Australia> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#ryanAir
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#ryanAir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#ryanAir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/untitled-ontology-2#Airline> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A350> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#UnitedKingdom> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Auckland> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WWarnock> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#1> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Date> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Australia> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDateFlown> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDestination> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Perth> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOrigin> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Doha> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#WayneBurgess> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#2> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAircraft> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#A380-800> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasAirline> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#qatar_airways> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasCountry> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Qatar> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasDate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#11/1/2023> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#AlwaleedAlthani> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#3> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#isVerified> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787-9/A330-300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+# 
+# http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Boeing787/777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Aircraft> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid14 <http://www.w3.org/2002/07/owl#members> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid18 <http://www.w3.org/2002/07/owl#members> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Wifi_Connectivity> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Value_For_Money> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Seat_Comfort> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Inflight_Entertainment> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Ground_Service> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Food_Beverages> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/MAFirstOntology#Evaluation_Cabin_Staff_Service> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#over> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#Y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid26 <http://www.w3.org/2000/01/rdf-schema#comment> "Detractor" .
+_:genid26 <http://www.w3.org/2000/01/rdf-schema#label> "Detractor" .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid26 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid28 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#arguments> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#over> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#arguments> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#over> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid38 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#over> .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid40 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/2003/11/swrl#head> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> .
+_:genid42 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid44 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Detractor> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid45 <http://www.w3.org/2000/01/rdf-schema#comment> "Neutral" .
+_:genid45 <http://www.w3.org/2000/01/rdf-schema#label> "Neutral" .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid45 <http://www.w3.org/2003/11/swrl#body> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#arguments> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#over> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid51 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/2003/11/swrl#arguments> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#over> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid57 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#over> .
+_:genid59 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid59 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid45 <http://www.w3.org/2003/11/swrl#head> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> .
+_:genid61 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid63 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Neutral> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid64 <http://www.w3.org/2000/01/rdf-schema#comment> "Promoter" .
+_:genid64 <http://www.w3.org/2000/01/rdf-schema#label> "Promoter" .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid64 <http://www.w3.org/2003/11/swrl#body> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid66 .
+_:genid66 <http://www.w3.org/2003/11/swrl#arguments> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#over> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
+_:genid70 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid70 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasPassenger> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
+_:genid72 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid72 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Survey> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid74 .
+_:genid74 <http://www.w3.org/2003/11/swrl#arguments> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#over> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid78 .
+_:genid78 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#over> .
+_:genid78 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid78 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#hasOverallRating> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid64 <http://www.w3.org/2003/11/swrl#head> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
+_:genid80 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid80 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid82 .
+_:genid82 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> .
+_:genid82 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miquel.abad/ontologies/2024/3/FlightsSurvey#Promoter> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
